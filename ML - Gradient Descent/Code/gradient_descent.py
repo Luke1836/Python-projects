@@ -24,7 +24,7 @@ def gradient_descent(m_now, b_now, learning_rate):
 m = 0
 b = 0
 L = 0.0001
-epochs = 100000
+epochs = 200000
 
 for i in range(epochs):
     m, b = gradient_descent(m, b, L)
