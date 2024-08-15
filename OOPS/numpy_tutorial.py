@@ -3,8 +3,8 @@ import random as r
 
 a = np.array([1,2,3,4,5], dtype="int32")
 b = np.array([[1.0, 2.0, 3.0, 8.0, 9.0], [4.0, 5.0, 6.0, 7.0, 10.0]])
-
-""" print(b.ndim)
+""" 
+print(b.ndim)
 print(b.shape, a.itemsize)
 print(b[: , 2])  All the rows in the third column
 print(b[0, :])  All the columns in the first row 
@@ -15,8 +15,8 @@ print(c)
 
 # Create an array with all eleements equal to 99
 d = np.full((4,4), 88)
-print(d) """
+print(d)
 
 print(np.random.rand(3,4))
 print(np.identity(4))
-print(np.random.randint(-2, 2, size=(4,4)))
+print(np.random.randint(-2, 2, size=(4,4))) """
