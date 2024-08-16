@@ -20,3 +20,13 @@ print(d)
 print(np.random.rand(3,4))
 print(np.identity(4))
 print(np.random.randint(-2, 2, size=(4,4))) """
+
+
+""" z = np.identity(4)
+print(z)
+
+y = np.ones([4,4])
+x = np.zeros([2,2])
+
+y[1:-1,1:-1] = x # [1:3, 1:3]
+print(y) """
