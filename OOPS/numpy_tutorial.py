@@ -6,7 +6,11 @@ b = np.array([[1.0, 2.0, 3.0, 8.0, 9.0], [4.0, 5.0, 6.0, 7.0, 10.0]])
 #c = b.copy()
 c = np.full((5,2), 4)
 d = np.matmul(b,c)  # Matrix Multiplication
-print(d)
+print(np.linalg.det(d))
+
+""" https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
+https://docs.scipy.org/doc/numpy/reference/routines.math.html """
+
 """ 
 print(b.ndim)
 print(b.shape, a.itemsize)
@@ -34,3 +38,7 @@ x = np.zeros([2,2])
 
 y[1:-1,1:-1] = x # [1:3, 1:3]
 print(y) """
+
+data = np.genfromtxt('data.txt', delimiter=',')
+data = data.astype('int32')
+print(data)
