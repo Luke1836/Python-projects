@@ -3,6 +3,10 @@ import random as r
 
 a = np.array([1,2,3,4,5], dtype="int32")
 b = np.array([[1.0, 2.0, 3.0, 8.0, 9.0], [4.0, 5.0, 6.0, 7.0, 10.0]])
+#c = b.copy()
+c = np.full((5,2), 4)
+d = np.matmul(b,c)  # Matrix Multiplication
+print(d)
 """ 
 print(b.ndim)
 print(b.shape, a.itemsize)
