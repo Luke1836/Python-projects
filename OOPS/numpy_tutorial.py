@@ -39,6 +39,7 @@ x = np.zeros([2,2])
 y[1:-1,1:-1] = x # [1:3, 1:3]
 print(y) """
 
+# Importing data
 data = np.genfromtxt('data.txt', delimiter=',')
 data = data.astype('int32')
 print(data)
