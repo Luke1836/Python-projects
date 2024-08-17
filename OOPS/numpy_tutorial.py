@@ -6,7 +6,7 @@ b = np.array([[1.0, 2.0, 3.0, 8.0, 9.0], [4.0, 5.0, 6.0, 7.0, 10.0]])
 #c = b.copy()
 c = np.full((5,2), 4)
 d = np.matmul(b,c)  # Matrix Multiplication
-print(np.linalg.det(d))
+print(np.linalg.det(d)) # Determinant
 
 """ https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
 https://docs.scipy.org/doc/numpy/reference/routines.math.html """
@@ -42,4 +42,9 @@ print(y) """
 # Importing data
 data = np.genfromtxt('data.txt', delimiter=',')
 data = data.astype('int32')
-print(data)
+k = np.any(data > 50, axis=1) # which rows have values greater than 50
+h = np.all(data < 50, axis=0) # which columns have values less than 50
+print(f'{k}\n{h}\n')
+
+""" print(data > 50)
+print(data[data > 50]) # Gets all the elements with value greater than 50 """
