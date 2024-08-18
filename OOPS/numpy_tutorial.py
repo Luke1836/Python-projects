@@ -8,8 +8,10 @@ c = np.full((5,2), 4)
 d = np.matmul(b,c)  # Matrix Multiplication
 print(np.linalg.det(d)) # Determinant
 
+#Materials
 """ https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
 https://docs.scipy.org/doc/numpy/reference/routines.math.html """
+
 
 """ 
 print(b.ndim)
