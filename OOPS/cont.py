@@ -26,3 +26,18 @@ print(len(matrix[0])) # Number of columns
 
 tranposed_matrix = [[matrix[i][j] for i in range(len(matrix))] for j in range(len(matrix[0]))]
 print(tranposed_matrix)
+
+
+# List zipping
+lst1 = [1,2,3,4]
+lst2 = ['a', 'b', 'c']
+
+result = list(zip(lst1, lst2))
+print(result)
+
+# Printing the common elements in the lists
+lst3 = [1,2,3,4,5]
+lst4 = [2,35,7,4,1]
+
+common = [x for x in lst3 if x in lst4]
+print(common)
