@@ -67,3 +67,17 @@ print(a,b)
 a, *b, c = packed_tuples   # Unpacking with '*'; creates a list of the elements from the starting elements to the last element
 print(a,b,c)
 
+
+"""     SETS       """
+set1 = {1,2,3,4,53,2}
+set2 = {2,4,2,4,42,53}
+
+union_set = set1.union(set2)
+intersection_set= set1.intersection(set2)
+difference_set1 = set1.difference(set2)
+difference_set2 = set2.difference(set1)
+
+print(set1, set2, union_set, intersection_set, difference_set1, difference_set2)
+set1.intersection_update(set2)
+set2.difference_update(set1)
+print(set1, set2)
