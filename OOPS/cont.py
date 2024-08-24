@@ -11,6 +11,8 @@ print(lst)
 # Removing repeating numbers
 lst = list(set(lst))
 print(lst)
+lst.pop() # Removes the last element from the list
+print(lst)
 
 # Matrix operations
 matrix = [
