@@ -14,6 +14,8 @@ print(lst)
 lst.pop() # Removes the last element from the list
 print(lst)
 
+print(lst.copy())
+
 # Matrix operations
 matrix = [
     [1, 2, 3],
@@ -81,3 +83,22 @@ print(set1, set2, union_set, intersection_set, difference_set1, difference_set2)
 set1.intersection_update(set2)
 set2.difference_update(set1)
 print(set1, set2)
+
+
+"""     Dictionaries      """       # Dictionary comprehension
+dict1 = {x:x**2 for x in range(6)}
+print(dict1)
+dict2 = {x:x**3 for x in range(6) if x%2 == 0}
+print(dict2)
+
+# Count the frequency of elements in the list
+lst = [1,2,4,2,3,21,42,3,23,13,13,2,4,23,2,2,32]
+dict = {x:lst.count(x) for x in lst}
+print(dict)
+
+# Merging two dictionaries
+dict3 = {**dict1, **dict2}
+print(dict3)
+
+for key, values in dict3.items():
+    print(f'Key: {key},\tValue: {values}')
