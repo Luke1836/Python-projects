@@ -31,7 +31,7 @@ print(tranposed_matrix)
 lst1 = [1,2,3,4]
 lst2 = ['a', 'b', 'c']
 
-result = list(zip(lst1, lst2))
+result = list(zip(lst1, lst2))  # Tuples inside a list
 print(result)
 
 # Printing the common elements in the lists
@@ -64,6 +64,4 @@ print(a,b)
 
 a, *b, c = packed_tuples   # Unpacking with '*'; creates a list of the elements from the starting elements to the last element
 print(a,b,c)
-
-
 
